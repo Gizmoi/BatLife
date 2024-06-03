@@ -9,3 +9,13 @@ Arduino uno was used for testing
 Calibration code is included to see what you need to set your thresholds at 
 
 Future updates : Adding a LCD, adding LEDS to verify that the program is running. 
+
+Working monitor
+
+![batlife](https://github.com/Gizmoi/Battery-Tester/assets/171525244/ca3cbea8-9edb-459b-8c30-e16ba96b64bd)
+
+
+Example circut
+
+
+![circut](https://github.com/Gizmoi/Battery-Tester/assets/171525244/bda5c96a-a31e-4f91-b20d-9ce6a360a0be)
