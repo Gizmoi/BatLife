@@ -15,7 +15,7 @@ bool timing = false;
 void setup()
 {
   Serial.begin(9600);
-  Serial.println("Welcome to batLif Tester ");
+  Serial.println("Welcome to BatLif Tester ");
 
 }
 
