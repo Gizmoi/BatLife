@@ -4,7 +4,9 @@ unsigned long clock_start = 0;
 unsigned long clock_end = 0;
 int sensor = A0;
 int sensor_value = 0;
+//Change value based on your resistors
 int light_thresh_start = 200;
+//Change value based on your resistors
 int light_thresh_end = 50;
 bool timing = false;
  
@@ -13,7 +15,8 @@ bool timing = false;
 
 void setup()
 {
-  Serial.begin(9600);
+Serial.begin(9600);
+Serial.println("Welcome to BatLif Tester ");
 }
 
 void loop()
