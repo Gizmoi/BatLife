@@ -1,13 +1,12 @@
+#include <Arduino.h>
 
 
 unsigned long clock_start = 0;
 unsigned long clock_end = 0;
 int sensor = A0;
 int sensor_value = 0;
-//Change value based on your resistors
-int light_thresh_start = 200;
-//Change value based on your resistors
-int light_thresh_end = 50;
+int light_thresh_start = 50;
+int light_thresh_end = 1;
 bool timing = false;
  
  
@@ -15,8 +14,9 @@ bool timing = false;
 
 void setup()
 {
-Serial.begin(9600);
-Serial.println("Welcome to BatLif Tester ");
+  Serial.begin(9600);
+  Serial.println("Welcome to batLif Tester ");
+
 }
 
 void loop()
@@ -34,13 +34,25 @@ void loop()
     Serial.println("Timer has ended");
     clock_end = millis();
     timing = false;
-    unsigned long clock = clock_end - clock_start;
-    Serial.print("Total time in seconds: ");
-    //Serial.print(clock);
     
+    
+    unsigned long clock = clock_end - clock_start;
     unsigned long seconds = clock /1000;
-    Serial.print(seconds);
+    unsigned long true_seconds = seconds %60;
+    unsigned long minutes = seconds /60;
+    unsigned long true_minutes = minutes %60;
+    unsigned long hours = minutes /60;
+    
+    Serial.print("Battery has lasted for : ");
+    Serial.print(hours);
+    Serial.print(" Hours ");
+    Serial.print(hours);
+    Serial.print(true_minutes);
+    Serial.print(" Minutes ");
+    Serial.print(true_seconds);
+    Serial.print(" Seconds ");
     Serial.println("");
+    
    
   }
    delay(100);
