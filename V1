@@ -1,4 +1,4 @@
-// light sensor
+
 
 unsigned long clock_start = 0;
 unsigned long clock_end = 0;
