@@ -11,9 +11,10 @@ Calibration code is included to see what you need to set your thresholds at
 
 Future updates : Adding a LCD, adding LEDS to verify that the program is running. 
 
-Working monitor
+Working monitor with updated time layout
 
-![batlife](https://github.com/Gizmoi/Battery-Tester/assets/171525244/ca3cbea8-9edb-459b-8c30-e16ba96b64bd)
+![batlif1](https://github.com/Gizmoi/Battery-Tester/assets/171525244/4ec86a40-d5f2-4710-be4d-3cdab5dd1ec5)
+
 
 
 Example circut
